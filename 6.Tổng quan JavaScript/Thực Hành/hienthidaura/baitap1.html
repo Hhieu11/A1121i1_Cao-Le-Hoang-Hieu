@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị xin chào</title>
+</head>
+<body>
+<button type="button" onclick="show()">click </button>
+<button type="button"id="btn">click here</button>
+<script>
+    function show() {
+        alert("xin chào");
+
+    }
+
+    var btn   =document.getElementById("btn");
+    // btn.addEventListener('click',()=>{
+    //     alert('s')
+    // })
+
+
+    // btn.onclick=function(){
+    //     alert("ád")
+    btn.addEventListener('click',clickf);
+    function clickf() {
+        alert("hello 111b")
+
+    }
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
