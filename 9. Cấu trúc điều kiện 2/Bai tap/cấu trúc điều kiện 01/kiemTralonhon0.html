@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số lớn hay nhỏ hơn 0</title>
+</head>
+<body>
+<input type="text" id="so" placeholder="nhap vao so">
+<button type="button" onclick="kiemtra()"> Kiểm tra </button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+
+    var so=document.getElementById('so');
+    function kiemtra(){
+        // if(parseInt(so.value)>0)
+        // {
+        //     kq.innerText='so lon hon 0'
+        // }
+        // else if(parseInt(so.value)<0)
+        // {
+        //     kq.innerText='so nho hon 0'
+        //
+        // }
+        // else
+        // {
+        //     kq.innerText='so = 0'
+        //
+        // }
+
+        //toan tu 3 ngôi
+        parseInt(so.value)>0?kq.innerText='so lon hon 0':parseInt(so.value)<0?kq.innerText='so nho hon 0': kq.innerText='so = 0';
+
+    }
+</script>
+
+</body>
+</html>

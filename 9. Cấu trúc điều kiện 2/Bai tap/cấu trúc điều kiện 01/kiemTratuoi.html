@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra tuổi học lớp 10</title>
+</head>
+<body>
+<input type="text" id="nam" placeholder="nhap nam sinh">
+<button type="button" onclick="kiemtra()"> Kiểm tra </button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+    var year=new Date().getFullYear();
+    var nam=document.getElementById('nam');
+
+    function kiemtra() {
+        if(year-parseInt(nam.value)>=15)
+        {
+            kq.innerText="Du tuoi vao lop 10";
+
+        }
+        else
+        {
+            kq.innerText="Khong du tuoi vao lop 10"     ;
+
+
+        }
+
+
+    }
+</script>
+
+</body>
+</html>

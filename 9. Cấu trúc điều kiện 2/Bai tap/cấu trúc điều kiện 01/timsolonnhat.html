@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> tìm giá trị lớn nhất của ba số nguyên</title>
+</head>
+<body>
+<input type="text" id="soA" placeholder="nhap vao so A">
+<input type="text" id="soB" placeholder="nhap vao so B ">
+<input type="text" id="soC" placeholder="nhap vao so C">
+<button type="button" onclick="kiemtra()"> Kiểm tra </button>
+<br>
+<br>
+<label id="kq"></label>
+
+
+<script >
+    var soA=document.getElementById('soA');
+    var soB=document.getElementById('soB');
+    var soC=document.getElementById('soC');
+ var max =0;
+    function kiemtra() {
+
+        if(parseInt(soA.value)>max)
+        {
+            max=parseInt(soA.value)
+
+        }
+        if(parseInt(soB.value)>max)
+
+        {
+            max=parseInt(soB.value)
+        }
+         if(parseInt(soC.value)>max){
+            max=parseInt(soC.value)
+
+        }
+        document.getElementById('kq').innerText=max;
+
+    }
+</script>
+</body>
+</html>
