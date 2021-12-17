@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Máy tính cơ bản</title>
+</head>
+<body>
+<h1>Calculator</h1>
+<form>
+    <label>Number 1 :</label>
+    <input type="text" name="number1" id="number1">
+
+
+    <br>
+    <br>
+    <label>Number 2:</label>
+    <input type="text" name ="number2" id="number2">
+    <br>
+    <br>
+    <button type="button" onclick="calc(1)"  > Cộng (+)</button>
+    <button type="button" onclick="calc(2)" > Trừ (-)</button>
+    <button type="button" onclick="calc(3)" > Nhân (*)</button>
+    <button  type=" button" onclick="calc(4)" > Chia (/)</button>
+    <br>
+    <br>
+    <label> Result :</label><span id="result">0.0</span>
+
+
+
+    <script>
+
+            var number1=document.getElementById('number1');
+            var number2=document.getElementById('number2');
+            var result= document.getElementById('result');
+
+
+            // function cong() {
+            //
+            //     kq(result);
+            //
+            // }
+            // function tru() {
+            //     let  result = parseInt(number1.value) - parseInt(number2.value); kq(result);
+            //
+            // }
+            // function nhan() {
+            //     let  result = parseInt(number1.value) * parseInt(number2.value); kq(result);
+            //
+            // }
+            // function chia() {
+            //     let result = parseInt(number1.value) / parseInt(number2.value); kq(result);
+            //
+            // }
+            // function kq(a) {
+            //     result.innerText=a;
+            // }
+            // cach 2
+            let  kq =0;
+            function calc(a){
+                switch (a) {
+                case 1:
+                      kq= parseInt(number1.value) + parseInt(number2.value);
+                    result.innerText=kq;
+                break;
+                case 2:
+                      kq= parseInt(number1.value) - parseInt(number2.value);
+                    result.innerText=kq;
+                    break;
+                case 3:   kq= parseInt(number1.value) * parseInt(number2.value);
+                        result.innerText=kq;
+                        break;
+              case 4:   kq= parseFloat(number1.value) / parseFloat(number2.value);
+                        result.innerText=kq;
+                        break;
+                }
+            }
+
+    </script>
+
+</form>
+
+</body>
+</html>
