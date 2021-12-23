@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich tam giac vuong </title>
+</head>
+<body>
+<h2>Tinh dien tich tam giac vuong </h2>
+<input type="text" id="canhA" placeholder="Nhap vao canh ke A">;
+<input type="text" id="canhB" placeholder="Nhap vao canh ke B">;<br><br>
+<button type="button" onclick="tinhS()">TinhS</button><br><br>
+<label id="kq"></label>
+
+<script>
+
+    function tinhS(){
+        var a=document.getElementById('canhA').value;
+        var b=document.getElementById('canhB').value;
+        var kq=document.getElementById('kq')
+        var s=a*b/2;
+        kq.innerText="Dien tich tam giac vuong la : "+s;
+
+    }
+</script>
+
+</body>
+</html>

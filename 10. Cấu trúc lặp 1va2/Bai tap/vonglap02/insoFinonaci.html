@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Finonaci</title>
+</head>
+<body>
+<script>
+    var n=prompt("Nhap vao so finonaci n")
+    if(n>=0){
+        var f0=0,f1=1,fn=0
+        document.write(f0+" "+f1+" ")
+        if(n<2){
+            fn=n;
+
+
+        }
+        for(var i=2;i<=n;i++)
+        {
+            fn=f0+f1;
+
+            f0=f1;
+            f1=fn;
+            document.write(fn+" ")
+        }
+
+
+    }
+    else{
+        alert("Nhap lai so n")
+    }
+</script>
+
+
+</body>
+</html>

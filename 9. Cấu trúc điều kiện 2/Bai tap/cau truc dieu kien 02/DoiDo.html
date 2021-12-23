@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doi nhiet do </title>
+</head>
+<body>
+<input type="text" id="DoC" placeholder="nhap vao do C">
+<input type="text" id="DoF" placeholder="Nhap vao do F">
+<br>
+<br>
+<button type="button" onclick="CsangF()">Do F</button>
+<button type="button" onclick="FsangC()">Do C</button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+
+    function CsangF() {
+        var c = document.getElementById('DoC').value;
+        var kq=document.getElementById('kq');
+        var result= c*9/5 + 32;
+        kq.innerText=result +" Do F"
+
+    }
+    function FsangC() {
+        var f = document.getElementById('DoF').value;
+        var kq = document.getElementById('kq');
+        var result = (f - 32) * (5 / 9);
+        kq.innerText=result+ " Do C"
+    }
+
+
+</script>
+
+</body>
+</html>

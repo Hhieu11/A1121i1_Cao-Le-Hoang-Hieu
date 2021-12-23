@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa của một số nguyên dương</title>
+</head>
+<body>
+<script>
+    var n=prompt("Nhap so n")
+    if(n>=0){
+        var gt=1;
+        for (i=n;i>=1;i--){
+
+            gt*=i;
+
+
+
+        }
+        document.write(`gia tri cua ${n}! = `+gt)
+
+    }
+    else{
+        alert("Nhap lai so n")
+
+    }
+</script>
+</body>
+</html>

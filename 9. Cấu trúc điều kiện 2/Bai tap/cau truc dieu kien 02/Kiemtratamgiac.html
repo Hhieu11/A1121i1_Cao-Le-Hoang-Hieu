@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra tam giac </title>
+</head>
+<body>
+<input type="text" id="soA" placeholder="Nhap vao canh A">
+<input type="text" id="soB" placeholder="Nhap vao canh B">
+<input type="text" id="soC" placeholder="Nhap vao canh C">
+
+<br><br>
+<button type="button" onclick="tinh()">Kiem tra</button><br><br>
+<label id="kq"></label>
+<script>
+    function tinh(){
+        var a=document.getElementById('soA')
+        var b=document.getElementById('soB')
+        var c=document.getElementById('soC')
+        var kq=document.getElementById('kq')
+        if ((a + b > c) || (a + c > b) || (b + c > a))
+        {
+            kq.innerText="day la 3 canh cua 1 tam giac"
+        }
+        else
+        {
+            kq.innerText="day khong phai 3 canh cua 1 tam giac"
+
+        }
+
+    }
+</script>
+
+</body>
+</html>

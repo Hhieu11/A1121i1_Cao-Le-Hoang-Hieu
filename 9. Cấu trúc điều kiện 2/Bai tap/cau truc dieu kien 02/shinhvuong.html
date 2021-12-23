@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich hinh vuong</title>
+</head>
+<body>
+<h2>Tinh dien tich hinh vuong</h2>
+<input type="text" id="canhA" placeholder="Nhap vao canh A">
+<br>
+<br>
+<button type="button" onclick="tinhS()" >KetQua</button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+    function tinhS() {
+        var a=document.getElementById('canhA').value;
+        var kq=document.getElementById('kq');
+        result=a*a;
+        // result=Math.pow(a,2)
+        kq.innerText="Dien tich hinh vuong = "+result;
+
+    }
+</script>
+
+</body>
+</html>

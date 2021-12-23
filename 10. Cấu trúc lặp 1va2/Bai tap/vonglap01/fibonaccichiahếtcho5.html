@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+    var f0=0;
+    var f1 =1;
+    var fn=1;
+    for (var i = 2; i < Number.POSITIVE_INFINITY; i++) {
+        f0 = f1;
+        f1 = fn;
+        fn = f0 + f1;
+        if(fn%5==0){
+            alert(fn)
+            break;
+        }
+    }
+
+</script>
+
+</body>
+</html>

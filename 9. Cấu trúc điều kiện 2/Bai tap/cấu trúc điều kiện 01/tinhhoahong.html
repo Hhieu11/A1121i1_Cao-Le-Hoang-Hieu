@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Hoa Hong</title>
+</head>
+<body>
+<input type="text" id="dThu" placeholder="Nhap vao doanh thu">
+<br>
+<br>
+<button type="button" onclick="tinh()"> Tinh dt</button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+    function tinh(){
+
+
+    var dThu=document.getElementById('dThu').value;
+    var kq=document.getElementById('kq');
+    var hoahong;
+
+    if (parseInt(dThu)<=100)
+    {
+        hoahong=dThu*5/100;
+        kq.innerText=hoahong +"trieu dong " ;
+    }
+      else  if (parseInt(dThu)<=300) {
+        hoahong=dThu*10/100;
+        kq.innerText=hoahong +"trieu dong " ;
+    }
+      else  if (parseInt(dThu)>300)
+    {
+        hoahong=dThu*20/100;
+        kq.innerText=hoahong +"trieu dong " ;
+    }
+
+    }
+</script>
+
+</body>
+</html>

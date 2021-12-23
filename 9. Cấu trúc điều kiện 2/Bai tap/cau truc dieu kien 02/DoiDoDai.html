@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mét sang feet</title>
+</head>
+<body>
+<input type="text" id="met" placeholder="Nhap vao so met">
+<br>
+<br>
+<button type="button" onclick="doiM()">Submit</button>
+<br>
+<br>
+<label id="kq"> 0.0</label>
+<script>
+
+    function doiM(){
+        var met=document.getElementById('met').value;
+        var kq=document.getElementById('kq');
+        var result=met * 3.2808;
+        kq.innerText=result+" feet"
+
+    }
+</script>
+
+</body>
+</html>

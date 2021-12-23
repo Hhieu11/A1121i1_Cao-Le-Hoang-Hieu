@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n=prompt("Nhap n")
+    var f0=0;
+    var f1 =1;
+    var fn=0;
+    var sum=1;
+    for( i = 2; i <n; i++)
+    {
+        fn = f0 + f1;
+        f0 = f1;
+        f1 = fn;
+
+    sum+=fn;
+
+    }
+    alert(` tong cua cac so fibonacci ${n}= `+sum)
+
+</script>
+
+</body>
+</html>

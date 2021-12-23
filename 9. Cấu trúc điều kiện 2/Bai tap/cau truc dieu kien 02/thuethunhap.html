@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh thue thu nhap ca nhan</title>
+</head>
+<body>
+<h2>Tinh thue thu nhap ca nhan</h2>
+<input type="text" id="soTien" placeholder="Nhap vao so Tien"><br><br>
+<button type="button" onclick="tinh()"> Tinh</button><br><br>
+<label id="kq"></label>
+
+<script>
+    function tinh() {
+
+        var soTien=document.getElementById('soTien').value;
+        var kq=document.getElementById('kq');
+        var tienthue=0;
+        if(soTien<=5000000){
+            tienthue=soTien*5/100;
+            kq.innerText='so tien ban can dong thue la :'+tienthue;
+        }
+        if (soTien>5000000){
+            tienthue=(soTien*10/100)-250000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+' vnd';
+        }
+        if(soTien>=10000000&&soTien<=18000000){
+            tienthue=(soTien*15/100)-750000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+' vnd';
+
+        }
+        if(soTien>18000000&&soTien<=32000000){
+            tienthue=(soTien*20/100)-1650000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+' vnd';
+
+        }
+        if(soTien>32000000&&soTien<=52000000){
+            tienthue=(soTien*25/100)-3250000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+'vnd';
+
+        }
+        if(soTien>52000000&&soTien<=80000000){
+            tienthue=(soTien*30/100)-5850000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+' vnd';
+
+        }
+        else
+        {
+            tienthue=(soTien*35/100)-9850000;
+            kq.innerText='so tien ban can dong thue la :'+tienthue+'vnd';
+
+        }
+
+
+
+    }
+</script>
+
+</body>
+</html>

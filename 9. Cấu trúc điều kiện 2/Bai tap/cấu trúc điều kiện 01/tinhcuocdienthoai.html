@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh cuoc dien thoai</title>
+</head>
+<body>
+<h2> Tinh cuoc dien thoai </h2>
+
+<p>600 đồng cho mỗi gọi của 50 phút đầu tiên. </p>
+<p>400 đồng cho mỗi phút gọi của 150 phút tiếp theo. </p>
+<p> 200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.</p>
+<input type="text" id="sophut" placeholder="Nhap so phut goi"><br> <br>
+<button type="button" onclick="tinh()"> Gia cuoc</button><br> <br>
+<label id="kq">0.0</label>
+<script>
+    function tinh() {
+        var sophut=document.getElementById('sophut').value;
+        var kq=document.getElementById('kq');
+        var phi =0;
+
+        if(sophut>200){
+            phi=(sophut-200)*200+150*400+50*600;
+            // kq.innerText=phi
+
+
+            kq.innerText=`gia tien phai tra cho ${sophut} phut goi la `+phi+'vnd';
+
+        }
+        else if(sophut>50)
+        {
+            phi=(sophut-50)*400+50*600;
+
+            kq.innerText=`gia tien phai tra cho ${sophut} phut goi la `+phi+'vnd';
+
+        }
+        else
+        {
+            phi=sophut*600;
+
+            kq.innerText=`gia tien phai tra cho ${sophut} phut goi la `+phi +'vnd';
+
+
+        }
+
+
+
+    }
+</script>
+
+</body>
+</html>

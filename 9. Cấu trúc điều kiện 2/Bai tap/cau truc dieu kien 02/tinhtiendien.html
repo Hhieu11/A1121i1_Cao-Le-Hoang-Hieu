@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền điện</title>
+</head>
+<body>
+<h2> Tinh Tien Dien </h2>
+<input type="text" id="soDien" placeholder="Nhap vao so dien"><br><br>
+<button type="button" onclick="tinh()"> Tinh</button><br><br>
+<label id="kq"></label>
+
+<script>
+    function tinh() {
+
+        var soDien=document.getElementById('soDien').value;
+        var kq=document.getElementById('kq');
+        var tiendien=0;
+        var bac1=1687;
+        var bac2= 1734;
+        var bac3=2014;
+        var bac4=2536;
+        var bac5=2834;
+        var bac6=2927;
+
+        if (soDien<=0)
+        {
+            // kq.innerText='nhap lai so dien ';
+          alert('Moi ban nhap lai so dien')
+
+        }
+
+        else if(soDien<=50){
+            tiendien=soDien*bac1;
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+
+        }
+        else if(soDien<=100)
+        {
+            tiendien=50*bac1+((soDien-50)*bac2);
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+
+        }
+        else if(soDien<=200)
+        {
+            tiendien=50*bac1+(50*bac2)+((soDien-100)*bac3);
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+        }
+        else if(soDien<=300){
+            tiendien=50*bac1+(50*bac2)+(100*bac3)+((soDien-200)*bac4)
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+        }
+        else if(soDien<=400){
+            tiendien=50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+((soDien-300)*bac5);
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+
+        }
+        else if(soDien>400){
+            tiendien=50*bac1+(50*bac2)+(100*bac3)+(100*bac4)+(100*bac5)+((soDien-400)*bac6);
+            kq.innerText='so tien dien cua ban la = '+tiendien+' vnd';
+        }
+
+
+    }
+</script>
+
+
+</body>
+</html>

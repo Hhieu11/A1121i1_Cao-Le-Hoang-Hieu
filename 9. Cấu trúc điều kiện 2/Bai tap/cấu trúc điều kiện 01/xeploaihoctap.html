@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xếp loại học tập </title>
+</head>
+<body>
+<h3> Xếp hạng học lực</h3>
+<input type="text" id="diemkt" placeholder="Nhap diem kiem tra">
+<br>
+<br>
+<input type="text" id="diemgk" placeholder="Nhap diem giua ki">
+<br>
+<br>
+<input type="text " id="diemck" placeholder="Nhap diem cuoi ki" >
+<br>
+<br>
+<button type="button" onclick="kiemtra()">Submit</button>
+<br>
+<br>
+<label id="kq">0.0</label>
+<script>
+
+     function kiemtra() {
+         var a=document.getElementById('diemkt').value;
+         var b=document.getElementById('diemgk').value;
+         var c=document.getElementById('diemck').value;
+         var sum=(parseInt(a)+parseInt(b)+parseInt(c))/3;
+         var kq=document.getElementById('kq');
+         if(sum>=9)
+         {
+             kq.innerText=sum+" Loai A"
+         }
+         else if((sum>=7) && (sum<9))
+         {
+             kq.innerText=sum+" Loai B"
+         }
+         else if(  (sum>=5.0) && (sum<70)) {
+             kq.innerText=sum+" Loai C"
+
+
+         }
+         else{
+             kq.innerText=sum+" Loai D"
+
+
+         }
+
+
+
+     }
+
+</script>
+
+</body>
+</html>

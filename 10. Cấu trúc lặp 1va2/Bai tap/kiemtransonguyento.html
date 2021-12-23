@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra n so ngjuyen to</title>
+</head>
+<body>
+<script>
+
+    let n =prompt("Nhap vao so n")
+    if (n>0){
+        var m=2;
+        var count=0
+        while (count<n)
+        {
+            var ngto=true;
+            for (i=2;i<=Math.sqrt(m);i++)
+            {
+                if(m%i==0)
+                {
+                    ngto=false;
+                    break;
+                }
+            }
+            if(ngto)
+            {
+                alert(m+" " );
+                count++;
+            }
+            m++;
+        }
+    }
+    else {
+        alert("Nhap lai so n")
+    }
+
+
+</script>
+
+</body>
+</html>

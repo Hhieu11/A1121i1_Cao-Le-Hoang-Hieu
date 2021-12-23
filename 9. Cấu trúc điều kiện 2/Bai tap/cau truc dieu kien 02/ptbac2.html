@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 2</title>
+</head>
+<body>
+<h2>Giai phuong trinh bac 2</h2>
+<input type="text" id="soA" placeholder="Nhap vao so A">
+<input type="text" id="soB" placeholder="Nhap vao So B">
+<input type="text" id="soC" placeholder="Nhap vao So C">
+
+<br><br>
+<button type="button" onclick="tinh()">Tinh</button><br><br>
+<label id="kq"></label>
+<script>
+    function tinh() {
+        var a =document.getElementById('soA').value;
+        var b =document.getElementById('soB').value;
+        var c =document.getElementById('soC').value;
+        var kq =document.getElementById('kq');
+        var delta =(b * b) - (4 * a * c);
+        if(a==0)
+        {
+            if(b==0)
+            {
+                if(c==0)
+                {
+                    kq.innerText="Phuong trinh co vo so nghiem";
+                }
+                else
+                {
+                    kq.innerText="Phuong trinh  vo  nghiem";
+
+                }
+            }
+            else{
+                kq.innerText="phuong trinh co nghiem "+ (-c/b);
+            }
+        }
+        else if (delta>0)
+        {
+            xa=(-b + Math.sqrt(delta))/(2*a);
+
+            xb = (-b - Math.sqrt(delta))/(2*a);
+
+            kq.innerText="có nghiem x1 la "+  xa +" và x2 la "+xb;
+
+
+        }
+     else if (delta==0) {
+        x = -b/2*a
+        alert ('pt co nghiem kep la x1 = x2 =' +x)
+    } else
+        {
+            kq.innerText="Phuong tinh vo nghiem "
+        }
+
+
+
+
+    }
+</script>
+
+</body>
+</html>

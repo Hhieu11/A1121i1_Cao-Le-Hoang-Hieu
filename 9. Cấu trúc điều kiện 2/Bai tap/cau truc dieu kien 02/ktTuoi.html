@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra tuoi</title>
+</head>
+<body>
+<h2>Kiem tra tuoi</h2>
+<input type="text" id="tuoi" placeholder="nhap vao tuoi">
+<br>
+<br>
+<button type="button" onclick="kiemtra()">Kiem Tra </button>
+<br>
+<br>
+<label id="kq"></label>
+
+<script>
+    function kiemtra() {
+        var tuoi=document.getElementById('tuoi').value;
+        var kq=document.getElementById('kq');
+        if(tuoi<=120&& tuoi>0)
+        {
+            kq.innerText=` ${tuoi} la  tuoi 1 nguoi dan ong `;
+        }
+        else{
+            kq.innerText=` ${tuoi} khong phai tuoi 1 nguoi dan ong `;
+
+        }
+
+    }
+</script>
+
+</body>
+</html>

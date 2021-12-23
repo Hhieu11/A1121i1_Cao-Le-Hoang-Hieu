@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Dien Tich Hinh Chu Nhat</title>
+</head>
+<body>
+<h2>Tinh Dien Tich Hinh Chu Nhat</h2>
+<input type="text" id="canhA" placeholder="Nhap vao canh A">
+<input type="text" id="canhB" placeholder="Nhap vao canh B">
+<br>
+<br>
+<button type="button" onclick="TinhS()"> tinhS</button>
+<br>
+<br>
+<label id="kq"></label>
+<script>
+
+    function TinhS() {
+        var a=document.getElementById('canhA').value;
+        var b=document.getElementById('canhB').value;
+        var kq=document.getElementById('kq');
+        var s=a*b;
+        kq.innerText="Hinh chu nhat co dien tich la : "+s;
+
+
+    }
+</script>
+
+
+</body>
+</html>

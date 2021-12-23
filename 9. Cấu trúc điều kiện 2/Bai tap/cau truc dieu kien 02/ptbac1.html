@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai phuong trinh bac 1</title>
+</head>
+<body>
+<h2> Giai phuong trinh bac 1 </h2>
+<input type="text" id="soA" placeholder="Nhap vao so A">
+<input type="text" id="soB" placeholder="Nhap vao So B"><br><br>
+<button type="button" onclick="tinh()">Tinh</button><br><br>
+<label id="kq"></label>
+<script>
+
+    function tinh() {
+        var a =document.getElementById('soA').value;
+        var b=document.getElementById('soB').value;
+        kq=document.getElementById('kq');
+        if(a==0)
+        {
+            if(b==0)
+            {
+                kq.innerText="phuong trinh vo so ngiem";
+            }
+            else{
+                kq.innerText="phuong trinh vo  ngiem";
+
+            }
+        }
+        else{
+            kq.innerText="phuong trinh có nghiem = "+ (-b/a);
+        }
+
+    }
+</script>
+
+
+
+</body>
+</html>
+
