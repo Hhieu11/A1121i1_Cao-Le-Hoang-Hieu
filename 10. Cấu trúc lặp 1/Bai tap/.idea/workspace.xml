@@ -19,22 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="158df21b-df71-4125-a2b2-9bb5a99bb6b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/DoiDo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/DoiDoDai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/Kiemtratamgiac.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/ktTuoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/ptbac1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/ptbac2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/sChuNhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/sTamGiacVuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/shinhvuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/thuethunhap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cau truc dieu kien 02/tinhtiendien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cấu trúc điều kiện 01/tinhcuocdienthoai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cấu trúc điều kiện 01/tinhhoahong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../9. Cấu trúc điều kiện 2/Bai tap/cấu trúc điều kiện 01/xeploaihoctap.html" afterDir="false" />
-    </list>
+    <list default="true" id="158df21b-df71-4125-a2b2-9bb5a99bb6b1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../10. Cấu trúc lặp 1va2/Bai tap" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -77,6 +62,7 @@
       <workItem from="1640189163885" duration="290000" />
       <workItem from="1640248941323" duration="11502000" />
       <workItem from="1640260781208" duration="30000" />
+      <workItem from="1640330324307" duration="122000" />
     </task>
     <servers />
   </component>
@@ -96,9 +82,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1640161188940">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1640330445294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1640161188940" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1640330445294" />
   </component>
 </project>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+
+<br>
+<br>
+<input type="text" id="tien" placeholder="Nhap vao giá tien">
+<br>
+<br>
+<input type="text" id="thang" placeholder="Nhap vao thang">
+<br>
+<br>
+<button type="button" onclick="tinh()">Tính</button>
+<br>
+<br>
+<label id="kq">0.0</label>
+<script>
+    function tinh(){
+        var t =document.getElementById('tien').value;
+        var m=document.getElementById('thang').value;
+        var kq=document.getElementById('kq');
+        var tienlai;
+
+
+        for(var i=0;i<m;i++){
+            tienlai=t*0.3/12*m
+
+
+
+
+        }
+        kq.innerText=`so tien tong tra khi vay ${t} trong ${m} thang la :`+tienlai +" VND";
+
+
+
+    }
+
+</script>
+
+
+</body>
+</html>
