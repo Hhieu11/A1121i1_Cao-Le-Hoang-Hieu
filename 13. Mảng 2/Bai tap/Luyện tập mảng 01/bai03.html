@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 03</title>
+</head>
+<body>
+
+
+<script>
+   let sum=0;
+    var a=[]
+    var n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++){
+        let b=parseInt(prompt("phan tu "+i))
+
+        sum=sum+b
+        console.log(sum)
+
+       a.push(b)
+    }
+    document.write(" trung binh cong cua chuoi : "+sum/n+"<br>")
+
+
+    var maxNum=Math.max.apply(null,a)
+     document.write( "So lon nhat trong chuoi : "+maxNum)
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

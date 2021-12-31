@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[]
+    var n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++){
+        let a=prompt("phan tu "+i)
+
+
+        arr.push(a)
+
+
+    }
+    var arr2=[]
+    var m=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<m;i++){
+        let b=prompt("phan tu "+i)
+
+
+        arr2.push(b)
+
+
+    }
+
+    let count =0
+
+    if(n===m){
+        for (let i=0;i<n;i++){
+            for (let j=0;j<n;j++){
+                if(arr[i]===arr2[j]){
+                    count++;
+                }
+            }
+        }
+    }
+    else{
+        alert('khong bang nhau')
+    }
+    if(count==n){
+        alert('bang nhau')
+    }
+    else {
+        alert('khong bang nhau')
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>

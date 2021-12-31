@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text">
+<button type="button">submit</button>
+<div class="result"></div>
+<script>
+    let test = document.querySelector('input');
+   let result = document.querySelector('result')
+    var a=[{
+        tienganh:"hello",
+ tiengviet: "xinchao"
+    },
+     {
+            tienganh: 'goodbye',
+            tiengviet: 'tambiet'
+    },
+    {
+            tienganh: 'buy',
+            tiengviet: 'muahang'
+      }
+    ]
+
+    function tienganh(text){
+        a.forEach(b => {
+            if(b.tiengviet===text){
+                result.innerText =b.tienganh ;
+            }
+        })
+
+
+    } function tiengviet(text){
+            a.forEach(b => {
+                if(b.tienganh===text){
+                    result.innerText =b.tiengviet ;
+                }
+            })}
+
+    document.querySelector('button').addEventListener('click',function(){
+        let text = test.value.split(" ").join('');
+        tienganh(text);
+        tiengviet(text);
+
+    })
+
+
+</script>
+
+</body>
+</html>

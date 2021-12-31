@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   var arr1=[3, 5, 1, 8, -3, 7, 8]
+
+   var arr2= [7, 12, 6, 9, 20, 56, 89]
+
+   var arr3= []
+
+   var arr4=[0, 0, 0, 0, 0, 0]
+    
+    function minArray(arr) {
+        let  min=arr[0];
+       for(let i=0; i<arr.length;i++){
+
+           if(min>arr[i]){
+               min=arr[i];
+           }
+       }
+       return min
+
+    }
+    var  minNum=minArray(arr1)
+    document.write(`[${arr1}] so nho nhat trong mang la ${minNum}<br>`)
+   var minNum=minArray(arr2)
+   document.write(`[${arr2}] so nho nhat trong mang la ${minNum}<br>`)
+   var minNum=minArray(arr3)
+   document.write(`[${arr3}] so nho nhat trong mang la ${minNum}<br>`)
+   var minNum=minArray(arr4)
+   document.write(`[${arr4}] so nho nhat trong mang la ${minNum}<br>`)
+
+
+
+
+
+</script>
+
+</body>
+</html>

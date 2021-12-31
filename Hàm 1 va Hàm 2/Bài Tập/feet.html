@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="chuyenDoi" placeholder="Nhap vao">
+<button type="button" onclick="met()">Chuyen sang met</button>
+<button type="button" onclick="feet()">Chuyen sang feet</button>
+<label id="kq">Result</label>
+<script>
+   var cd=document.getElementById('chuyenDoi');
+   function met(){
+
+       let num = parseInt(cd.value)
+
+       document.getElementById('kq').innerText=num*0.305;
+
+
+   }
+
+   function feet() {
+
+       let num = parseInt(cd.value)
+
+       document.getElementById('kq').innerText=num*3.279;
+
+   }
+
+
+
+
+</script>
+
+</body>
+</html>
