@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC=doC
+        }
+        doF(){
+            return this.doC*(9/5)+32
+        }
+        doKevin(){
+            return  273+this.doC
+        }
+    }
+    let doidoF=new Temperature(32);
+    alert("Do C sang Do F: "+doidoF.doF())
+
+
+    let doidoK=new Temperature(32);
+    alert("do C sang do K: "+doidoK.doKevin())
+
+</script>
+
+</body>
+</html>

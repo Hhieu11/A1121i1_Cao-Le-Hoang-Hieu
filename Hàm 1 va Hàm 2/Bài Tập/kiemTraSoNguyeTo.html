@@ -6,28 +6,41 @@
 </head>
 <body>
 <script>
-    var ngTo=parseInt(prompt("nhap vao so"))
-    function  isPrime(num){
-      if(num!==1){
-          if(num===2){
-              alert('so nguyen to')
-          }
-          if(num%1==0&num%num==0){
-              if(num%2==0||num%3==0){
-                  alert('kh nguyen to')
-              }
-              else {
-                  alert('so nguyen to')
-              }
-          }
+    // var ngTo=parseInt(prompt("nhap vao so"))
+    // function  isPrime(num){
+    //   if(num!==1){
+    //       if(num===2){
+    //           alert('so nguyen to')
+    //       }
+    //       if(num%1==0&num%num==0){
+    //           if(num%2==0||num%3==0){
+    //               alert('kh nguyen to')
+    //           }
+    //           else {
+    //               alert('so nguyen to')
+    //           }
+    //       }
+    //
+    //   }else {
+    //       alert('kh nguyen to')
+    //   }
+    //
+    //
+    // }
+    // isPrime(ngTo)
 
-      }else {
-          alert('kh nguyen to')
-      }
 
+
+    function isprime(number) {
+        for (let i=2;i<number;i++){
+            if(number%i==0){
+                return false
+            }
+        }
+        return true;
 
     }
-    isPrime(ngTo)
+    console.log(isprime(9))
 
 
 

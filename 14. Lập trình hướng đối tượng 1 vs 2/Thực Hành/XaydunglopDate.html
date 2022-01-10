@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let myDate= function (day, month,year) {
+        this.day=day;
+        this.month=month;
+        this.year=year;
+        this.fulldate= function () {
+            return this.day+'/'+this.month+'/'+this.year;
+
+        }
+
+    }
+    let date1=new myDate(7,1,2022);
+    let date2=new myDate(8,1,2022)
+
+    let fulldate1=date1.fulldate()
+    alert(fulldate1)
+
+    let fulldate2=date2.fulldate()
+    alert(fulldate2)
+
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200px" height="100px" style="border:2px solid #d3d3d3;"></canvas>
+<br>
+<label id="kq"></label>
+<script>
+    
+    function  Rectangle(dai, rong) {
+
+        this.dai=dai;
+        this.rong=rong;
+
+        this.getDai=function () {
+            return this.dai;
+
+        }
+        this.getRong=function () {
+            return this.rong;
+
+        }
+        this.getarea=function () {
+            return this.dai*this.rong
+
+        }
+        this.getPerimeter=function () {
+            return (this.rong+this.dai)*2
+
+        }
+   }
+
+   let rectangle= new Rectangle(8,5);
+   let chieudai=rectangle.getDai();
+   let chieurong=rectangle.getRong();
+   let area=rectangle.getarea();
+   let chuvi=rectangle.getPerimeter();
+
+   // alert("co chieu dai la "+chieudai+" va chieu rong la "+chieurong+" hinh chu nhat co chu vi la "+chuvi+" dien tich"+area)
+
+    let kq=document.getElementById('kq')
+    kq.innerHTML="co chieu dai la: "+chieudai+"<br> chieu rong la: "+chieurong+"<br> hinh chu nhat co chu vi la: "+chuvi+"<br> dien tich: "+area
+</script>
+
+</body>
+</html>

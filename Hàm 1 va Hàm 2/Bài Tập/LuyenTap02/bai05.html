@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    var a=[]
+    var n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++){
+        let b=parseInt(prompt("phan tu "+i))
+        a.push(b)
+
+    }
+    function maxNum(a) {
+        let min=Number.POSITIVE_INFINITY;
+        for(let j=0;j<a.length;j++) {
+
+            if (a[j]< min) {
+                min= a[j]
+            }
+
+        }
+        return min ;
+   }
+   document.write(maxNum(a))
+
+
+   //  var minNum=Math.min.apply(null,a)
+   //
+   //  document.write(" Gia tri nho nhat trong mang la: "+minNum+"<br>")
+</script>
+
+</body>
+</html>

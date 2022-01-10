@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=[]
+    var n=parseInt(prompt("Nhap vao so luong mang"))
+    for (let i=0;i<n;i++) {
+        let b = parseInt(prompt("phan tu " + i))
+        arr.push(b)
+    }
+   function xapxep( arr){
+
+       for (let i=0;i<arr.length/2;i++){
+           let tem = arr[i]
+           arr[i]=arr[arr.length-i-1]
+           arr[arr.length-i-1]=tem;
+       }
+        return arr;
+
+
+    }
+
+
+    console.log(xapxep(arr))
+
+
+
+
+</script>
+
+</body>
+</html>

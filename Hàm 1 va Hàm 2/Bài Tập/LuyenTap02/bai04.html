@@ -7,16 +7,13 @@
 <body>
 <script>
 
-    var arr=parseInt(prompt("Nhap vao"));
+    var arr=parseInt(prompt("Nhap vao")) ;
     function check(str) {
-
-        if(str==Number){
-            alert(true)
-
+        if(!isNaN(str)){
+            alert('true')
         }
         else{
-            alert(false)
-
+            alert('false')
         }
 
 
